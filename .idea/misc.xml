@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/background_rounded_edit_text.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/gradient_intro_fail2.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/gradient_main_background.xml" value="0.257" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_left_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_pokeballs.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/like_green.xml" value="0.257" />
+        <entry key="app/src/main/res/drawable/rewind.xml" value="0.257" />
+        <entry key="app/src/main/res/drawable/skip_red.xml" value="0.257" />
+        <entry key="app/src/main/res/font/bunge_outline.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.294452368694803" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.24230072463768115" />
+        <entry key="app/src/main/res/layout/item_back_button.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_onboarding.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_pokemon.xml" value="0.4134963768115942" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
