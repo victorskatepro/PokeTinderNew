@@ -16,4 +16,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PokeTinderNew"
 include ':app'
-include ':zygnearchitecture'

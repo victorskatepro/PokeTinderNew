@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.saico.poketindernew.R
-import com.saico.poketindernew.adapter.OnboardingAdapter
+import com.saico.poketindernew.ui.adapter.OnboardingAdapter
 import com.saico.poketindernew.databinding.ActivityOnboardingBinding
 import com.saico.poketindernew.util.Mock
 import com.saico.poketindernew.util.SharedPreferenceUtil

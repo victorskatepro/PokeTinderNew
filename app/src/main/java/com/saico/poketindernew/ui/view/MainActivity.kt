@@ -8,7 +8,7 @@ import android.view.animation.LinearInterpolator
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DefaultItemAnimator
-import com.saico.poketindernew.adapter.PokemonAdapter
+import com.saico.poketindernew.ui.adapter.PokemonAdapter
 import com.saico.poketindernew.databinding.ActivityMainBinding
 import com.saico.poketindernew.domain.model.Pokemon
 import com.saico.poketindernew.ui.viewmodel.MainViewModel

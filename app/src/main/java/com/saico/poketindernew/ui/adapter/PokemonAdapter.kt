@@ -1,4 +1,4 @@
-package com.saico.poketindernew.adapter
+package com.saico.poketindernew.ui.adapter
 
 import android.view.View
 import android.view.ViewGroup

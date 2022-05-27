@@ -1,6 +1,6 @@
 package com.saico.poketindernew.data
 
-import com.saico.poketindernew.data.database.PokemonDao
+
 import com.saico.poketindernew.data.model.PokemonListModel
 import com.saico.poketindernew.data.model.PokemonModel
 import com.saico.poketindernew.data.network.PokemonService
