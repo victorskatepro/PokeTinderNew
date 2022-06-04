@@ -1,4 +1,5 @@
 <resources>
     <color name="ic_launcher_background">#000000</color>
     <string name="app_name">PokeTinderNew</string>
+    <string name="textMock">Se puede ver a Bulbasaur durmiendo la siesta a la luz del sol. Hay una semilla en su espalda. Al absorber los rayos del sol, la semilla crece progresivamente.</string>
 </resources>

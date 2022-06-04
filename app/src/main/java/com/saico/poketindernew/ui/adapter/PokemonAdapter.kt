@@ -43,6 +43,7 @@ class PokemonAdapter(
             }
         }
     }
+
     interface Callback {
         fun onClickPokemonInformation(pokemon: Pokemon)
     }
