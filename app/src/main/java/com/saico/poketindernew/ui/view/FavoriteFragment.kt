@@ -35,5 +35,10 @@ class FavoriteFragment : BaseFragment<FragmentFavoriteBinding>(FragmentFavoriteB
             listMyPokemon.addAll(it)
             adapter.notifyDataSetChanged()
         }
+
+        binding.floatingActionDelete.setOnClickListener {
+            viewModel.deleteAllPokemon()
+            viewModel.onCreate()
+        }
     }
 }
