@@ -8,6 +8,7 @@ import com.saico.poketindernew.domain.usecase.DeleteAllMyPokemonsUseCase
 import com.saico.poketindernew.domain.usecase.GetMyPokemonsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import okhttp3.internal.notify
 import javax.inject.Inject
 
 @HiltViewModel
@@ -23,16 +24,14 @@ class FavoriteViewModel @Inject constructor(
         viewModelScope.launch {
             isLoading.postValue(true)
             val result = getMyPokemonsUseCase()
-            if (result.isNotEmpty()) {
-                myPokemonList.postValue(result)
-                isLoading.postValue(false)
-            }
+            myPokemonList.postValue(result)
+            isLoading.postValue(false)
         }
     }
 
     fun deleteAllPokemon() {
         viewModelScope.launch {
-            val result = deleteAllMyPokemonsUseCase()
+            deleteAllMyPokemonsUseCase()
         }
     }
 }
