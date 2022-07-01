@@ -8,21 +8,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.fragment.app.viewModels
 import com.saico.poketindernew.R
 import com.saico.poketindernew.databinding.FragmentHomeBinding
 import com.saico.poketindernew.databinding.FragmentInfoBinding
+import com.saico.poketindernew.ui.viewmodel.HomeViewModel
 import com.saico.poketindernew.ui.viewmodel.InfoViewModel
 
 class InfoFragment : BaseFragment<FragmentInfoBinding>(FragmentInfoBinding::inflate) {
 
-    private lateinit var viewModel: InfoViewModel
+    private val viewModel: InfoViewModel by viewModels()
 
     private lateinit var webView: WebView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val url = "https://pokemongolive.com/es/"
 
         webView = binding.wvMain
 
@@ -30,8 +30,9 @@ class InfoFragment : BaseFragment<FragmentInfoBinding>(FragmentInfoBinding::infl
 
         webView.webViewClient = PokemonWebClient()
 
-        webView.loadUrl(url)
-
+        viewModel.getUrlPokemon().observe(viewLifecycleOwner) {
+            webView.loadUrl(it)
+        }
     }
 
     inner class PokemonWebClient: WebViewClient() {

@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
+import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DefaultItemAnimator
@@ -39,6 +40,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
         initializeTinderCard()
         observeValues()
         homeViewModel.onCreate()
+
+        homeViewModel.getUrlPokemon().observe(this) {
+            Toast.makeText(context, "Text: $it", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun observeValues() {
